@@ -4,9 +4,7 @@
  *  Author        :  <your name here>
  *  Date          :  <date of writing here>
  *  Description   :  This file provides the "test harness" for checking out the methods which are part of
- *                   the homework01 assignment.  It also provides examples of proper documentation, and
- *                   uses the source file header template as specified in the "Greeter.java" template file
- *                   for use in CMSI 186, Spring 2017.
+ *                   the assignment01 assignment.  It also provides examples of proper documentation.
  *  Notes         :  There are (presently) fifty-four separate tests. Successful (unsuccessful) tests
  *                   output an appropriate message for pass/fail.  If an exception is thrown, the test
  *                   simply outputs "false".  Tests for main() are not included; your professor and the
