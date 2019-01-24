@@ -68,7 +68,7 @@ public class CalendarStuff {
    * @return         boolean which is true if the parameter is a leap year
    */
    public static boolean isLeapYear( long year ) {
-      return true;
+      return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
    }
 
   /**
