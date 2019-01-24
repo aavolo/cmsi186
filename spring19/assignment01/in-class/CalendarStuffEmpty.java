@@ -19,7 +19,7 @@
  *           -----  ----------  ------------  -----------------------------------------------------------
  *  @version 1.0.0  2017-01-02  B.J. Johnson  Initial writing and release
  */
-public class CalendarStuff {
+public class CalendarStuffEmpty {
 
   /**
    * A listing of the days of the week, assigning numbers; Note that the week arbitrarily starts on Sunday
@@ -57,7 +57,7 @@ public class CalendarStuff {
   /**
    * The constructor for the class
    */
-   public CalendarStuff() {
+   public CalendarStuffEmpty() {
       System.out.println( "Constructor called..." );
    }
 
