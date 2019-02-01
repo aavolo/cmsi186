@@ -4,11 +4,6 @@
 
 ### Summary
 
-Construct two classes for this assignment:
-1. **_CalendarStuff.java_** 
-2. **_CountTheDays.java_**
-
-There is a test harness, called **_CalendarStuffTester_.java**, along with an empty **_CalendarStuff.java_** template file located in my repo for assignment01.  There are  several files in that folder which show you how to do things like get command line arguments and do some logical and computational operations.
 
 ### Requirements:
 
