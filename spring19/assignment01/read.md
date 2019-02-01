@@ -25,3 +25,4 @@ There is a test harness, called **_CalendarStuffTester_.java**, along with an em
 2. The complete program in requirement 5 will be contained in its own class file called **_CountTheDays.java_**.
 3. Submission Guidelines: Make a sub-directory in your repository as mentioned above, called assignment01 and commit your source code into it. DON'T FORGET TO ADD A COMMIT COMMENT! You can commit as many times as you want, so commit early and commit often…
 4. You should also make several other methods which will help do the operations you need for the methods listed.  Check the template code to see what is there and fill in **ALL** the methods.
+5. Check out the grading template here - https://github.com/aavolo/cmsi186/blob/master/spring19/assignment01/Grading%20Template.xlsx
