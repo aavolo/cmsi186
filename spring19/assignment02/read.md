@@ -8,6 +8,7 @@
 ### Requirements:
 
 Make  **public class Die**, which contains at the very least the following methods.
+
      1. public Die( int nSides )
        // Constructor for a single die with sides numbered 1, 2, …, up to nSides
     2. public int roll()
