@@ -37,7 +37,7 @@ The following additional conditions apply:
    * the sin function [you must implement this as well]
    * trig functions like cos, tan;
    * log and exponentiation functions;
-   * some composite functions, e.g., sqrt (1 + cos(x) ) or cos(x)cos(2x). Make sure that your lab report clearly explains how I am supposed to invoke these.
+   * some composite functions, e.g., sqrt (1 + cos(x) ) or cos(x)cos(2x). Make sure that your javadocs clearly explain how I am supposed to invoke these.
    
 ## Notes:
 
