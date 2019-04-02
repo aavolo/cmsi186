@@ -3,7 +3,6 @@
 REM ============================================================================
 REM filename: riemanntests.bat
 REM purpose: provide a unified test sequence for the Riemann Integration Project
-REM @see http://bjohnson.lmu.build/cmsi186web/homework05.html for details
 REM ============================================================================
 @echo .
 @echo =====================================================
