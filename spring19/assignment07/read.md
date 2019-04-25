@@ -1,7 +1,7 @@
 
-# CMSI 186: Homework Assignment #7
+# CMSI 186: Homework Assignment #7 - EXTRA CREDIT
 ## Problems About Money [Familiarity with Dynamic Programming]
-### Assignment Due:<br />Wednesday, 2019-05-08 for section 05<br />Thursday, 2019-05-09 for section 03
+### Assignment Due:<br />Tuesday, 2019-05-07 
 
 <strong>For this assignment</strong>:<br />
 You will develop a Java program that solves the general problem of making change; specifically, you will make program <strong><code>DynamicChangeMaker</code></strong>, which takes as input arguments a sequence of coin denominations [distinct positive integers in no particular order], followed by an arbitrary amount of money [a non-negative integer], and which outputs the optimal way of making change for that amount using those denominations [optimal meaning the minimum number of coins], or if change cannot be made, outputs the message <em>IMPOSSIBLE</em>.
