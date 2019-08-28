@@ -47,11 +47,11 @@ public class CalendarStuffTester {
       System.out.println( "  [note: verified via 'http://www.miniwebtool.com/leap-years-list/?start_year=1582&end_year=2017']\n" );
 
       System.out.print( "   Test for year 1600 (long): " );
-      try { System.out.println( CalendarStuff.isLeapYear( 1600L ) ? "correct" : "no!" ); }
+      try { System.out.println( CalendarStuff.isLeapYear( 1600L ) ? "true" : "false" ); }
       catch( Exception e ) { System.out.println ( false ); }
 
       System.out.print( "   Test for year 1700 (long): " );
-      try { System.out.println( CalendarStuff.isLeapYear( 1700L ) ? "no!" : "correct" ); }
+      try { System.out.println( CalendarStuff.isLeapYear( 1700L ) ? "true" : "false" ); }
       catch( Exception e ) { System.out.println ( false ); }
 
       System.out.print( "   Test for year 1800 (int) : " );
