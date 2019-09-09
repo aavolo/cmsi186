@@ -18,6 +18,7 @@
  *            Rev      Date     Modified by:  Reason for change/modification
  *           -----  ----------  ------------  -----------------------------------------------------------
  *  @version 1.0.0  2017-01-02  B.J. Johnson  Initial writing and release
+ *  @version 2.0.0  2019-08-28  A. Volosin    Update to comments and template
  */
 public class CalendarStuffEmpty {
 
@@ -55,14 +56,17 @@ public class CalendarStuffEmpty {
    private static int[]    days        = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
   /**
-   * The constructor for the class
+   * The constructor for the class. This will remain empty for this assignment as we do not
+   * need to contruct an instance of CalendarStuff.
+   * Be sure to renatme this to CalendarStuff.
    */
    public CalendarStuffEmpty() {
-      System.out.println( "Constructor called..." );
+      
    }
 
   /**
    * A method to determine if the year argument is a leap year or not<br />
+   * You can check online for a simple formula.
    *  Leap years are every four years, except for even-hundred years, except for every 400
    * @param    year  long containing four-digit year
    * @return         boolean which is true if the parameter is a leap year
