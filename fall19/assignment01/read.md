@@ -1,6 +1,6 @@
 # CMSI 186: Homework Assignment 01
 ## Calendars and Dates - Getting Familiar with Java
-#### Due on 09.11.19
+#### Due on 09.18.19 BEFORE class begins
 
 ### Summary
 
