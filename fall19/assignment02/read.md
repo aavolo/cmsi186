@@ -1,7 +1,7 @@
 
 # CMSI 186: Homework Assignment 02
 ## Problems About Dice
-## Due: Monday 09.03.19, BEFORE class begins
+## Due: Monday 09.30.19, BEFORE class begins
 
 ### Summary
 
