@@ -17,4 +17,4 @@
 1. None at this time
 
 ### Submission Guidelines:
-Make a sub-directory in your repository as mentioned above, called **_homework03_** and commit your source code into it. DON'T FORGET TO ADD A COMMIT COMMENT!
+Make a sub-directory in your repository as mentioned above, called **_assignment03_** and commit your source code into it. DON'T FORGET TO ADD A COMMIT COMMENT!
