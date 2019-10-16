@@ -2,7 +2,7 @@
 
 # CMSI 186: Homework Assignment #4
 ## Problems About Soccer Balls [Discrete Simulations]
-### Assignment Due: Tuesday, 2019-03-21
+### Assignment Due: Tuesday, 2019-11-04
 
 <strong>This is a two-part assignment</strong>. In this second part of the assignment, you will program a discrete simulation of a physical system in order to answer some questions about its behavior. For this homework, accomplish the following activities to make a Java program, <code>SoccerSim</code>, that solves the following problem:
 
