@@ -1,7 +1,7 @@
 
 # CMSI 186: Homework Assignment #5
 ## Problems About Riemann Ingegration [Randomized Estimations]
-### Assignment Due:<br />Tuesday, 2019-04-09
+### Assignment Due:<br />Monday, 2019-11-18
 
 ## For this homework, accomplish the following activities:
 This assignment concerns a method of using <strong>randomized estimation</strong> to determine the area under a curve. For this assignment you will make programs for integrating polynomials, as discussed in class.
