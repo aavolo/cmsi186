@@ -1,6 +1,6 @@
 
 # CMSI 186: Homework Assignment #5
-## Problems About Riemann Ingegration [Randomized Estimations]
+## Problems About Riemann Integration [Randomized Estimations]
 ### Assignment Due:<br />Monday, 2019-11-18
 
 ## For this homework, accomplish the following activities:
