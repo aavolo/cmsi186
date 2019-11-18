@@ -90,7 +90,7 @@ public class BrobIntTester {
          g2 = new BrobInt( g02String );
          System.out.println( "      expecting: " + g02String + "\n" +
                              "        and got: " + g2.toString() );
-      }
+      }  
       catch( Exception e ) { System.out.println( "        Exception thrown:  " ); }
 
       try {

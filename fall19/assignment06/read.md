@@ -1,7 +1,7 @@
 
 # CMSI 186: Homework Assignment #6
 ## Problems About Giant-sized Integer Numbers
-### Assignment Due:<br />Thursday, 2019-04-25
+### Assignment Due:<br />Monday, 2019-12-09
 
 ## For this homework:
 You will develop public class <strong>BrobdingnagianInt</strong>, whose objects model arbitrarily-large integers.  Basically, you are being asked to re-invent some of the material of <code>java.math.BigInteger</code> to accomplish the following activities.

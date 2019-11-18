@@ -21,7 +21,7 @@
  *                                     sequence.  Added some tests into the main() method at the bottom
  *                                     of the file to test construction.  Also added two tests there to
  *                                     test multiplication by three and times-3-plus-1 operations
- *
+ *  1.3.0  2019-11-17  A. Volosin    Include method for removing zeroes. Delet pressEnter.
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 import java.util.Arrays;
 import java.io.BufferedReader;
@@ -279,23 +279,36 @@ public class BrobIntTemplate {
       System.out.println( "Array contents: " + Arrays.toString( d ) );
    }
 
-  /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   *  Method to display a prompt for the user to press 'ENTER' and wait for her to do so
+   /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   *  Method to remove leading zeros from a BrobInt passed as argument
+   *  @param  gint     BrobInt to compare to this
+   *  @return BrobInt that is the argument BrobInt with leading zeros removed
+   *  Note that the sign is preserved if it exists
    *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-   public void pressEnter() {
-      String inputLine = null;
-      try {
-         System.out.print( "      [Press 'ENTER' to continue]: >> " );
-         inputLine = input.readLine();
+   public BrobInt removeLeadingZeros( BrobInt gint ) {
+
+      Character sign = null;
+      String returnString = gint.toString();
+      int index = 0;
+      if( ('-' == returnString.charAt( index )) || ('+' == returnString.charAt( index )) ) {
+         sign = returnString.charAt( index );
+         index++;
       }
-      catch( IOException ioe ) {
-         System.out.println( "Caught IOException" );
+
+      while( returnString.charAt( index ) == '0' ) {
+         index++;
       }
+      returnString = gint.toString().substring( index, gint.toString().length() );
+      if( sign != null ) {
+         returnString = sign.toString() + returnString;
+      }
+      return new BrobInt( returnString );
 
    }
 
+
   /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   *  the main method redirects the user to the test class
+   *  The main method contains tests for each method.
    *  @param  args  String array which contains command line arguments
    *  NOTE:  we don't really care about these, since we test the BrobInt class with the BrobIntTester
    *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
