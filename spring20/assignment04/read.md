@@ -1,1 +1,1 @@
-FOlder for assignment04 materials.
+Folder for assignment04 materials.
