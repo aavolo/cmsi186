@@ -16,6 +16,12 @@
  #### H4
  ##### H5
  ###### H6
+ 
+ ## Headers
+ ```
+  Regular paragraph test requires no markdown syntax.
+ ```
+ Regular paragraph test requires no markdown syntax.
 
 
 ## Emphases
@@ -48,10 +54,6 @@ Strikethrough - ~~two tildes~~.
 1. Another Item 1
 ⋅⋅1. Numbered sub-list
 4. Item 4
-
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
 ```
 
 1. Item 1
@@ -61,6 +63,3 @@ Strikethrough - ~~two tildes~~.
 ⋅⋅1. Numbered sub-list
 4. Item 4
 
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
