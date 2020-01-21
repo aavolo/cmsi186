@@ -19,9 +19,9 @@
  
  ## Headers
  ```
-  Regular paragraph test requires no markdown syntax.
+  Regular paragraph text requires no markdown syntax.
  ```
- Regular paragraph test requires no markdown syntax.
+ Regular paragraph text requires no markdown syntax.
 
 
 ## Emphases
