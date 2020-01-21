@@ -1,4 +1,4 @@
-# CMSI 186 Lab 2 Virtual Darts Starter Code
+# CMSI 186 Lab 1 Music Mashup Helpful Files
 
 This repository contains some helpful files for assignment01 including:
 * The powerpoint we covered in class on 01.16.20
