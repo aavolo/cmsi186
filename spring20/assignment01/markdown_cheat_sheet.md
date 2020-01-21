@@ -50,16 +50,14 @@ Strikethrough - ~~two tildes~~.
 ```
 1. Item 1
 2. Item 2
-⋅⋅* Bulleted sub-list. 
+* Bulleted sub-list. 
 1. Another Item 1
-⋅⋅1. Numbered sub-list
 4. Item 4
 ```
 
 1. Item 1
 2. Item 2
-⋅⋅* Bulleted sub-list. 
+* Bulleted sub-list. 
 1. Another Item 1
-⋅⋅1. Numbered sub-list
 4. Item 4
 
