@@ -5,20 +5,17 @@
 public class PiEstimator {
 
     public static void main(String[] args) {
+        if (args.length != 1) {
+                // use 10000 default for total darts
+        }
         try {
-            if (args.length != 1) {
-                throw new IllegalArgumentException("Exactly one argument required");
-            }
+            
             //
-            // TODO: Parse the command line argument and call your estimate function
+            // TODO: Parse the command line argument 
             //
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException nfe) {
             //
             // TODO: Take care of a possible non-integer argument.
-            //
-        } catch (IllegalArgumentException e) {
-            //
-            // TODO: Take care of the exception you threw above.
             //
         }
 
