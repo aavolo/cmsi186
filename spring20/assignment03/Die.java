@@ -34,13 +34,13 @@
  *  @version 1.1.0  2017-02-17  B.J. Johnson  Filled in method code
  *  @version 2.0.0  2020-02-03  A. Volosin    Update naming conventions and method descriptions.
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-public class DieEmpty {
+public class Die {
 
   /**
    * private instance data
    */
    private int sides;
-   private int pips;
+   private int pips;      // The value on the face-up side of the Die
    private final int MINIMUM_SIDES = 4;
 
    // public constructor:
@@ -50,7 +50,7 @@ public class DieEmpty {
    * @throws       IllegalArgumentException
    * Note: parameter must be checked for validity; invalid value must throw "IllegalArgumentException"
    */
-   public DieEmpty( int nSides ) {
+   public Die( int nSides ) {
    }
 
   /**

@@ -101,12 +101,6 @@ public class DiceSet {
       return "";
    }
 
-  /**
-   * @return  true iff this set is identical to the set passed as an argument
-   */
-   public boolean isIdentical( DiceSet ds ) {
-      return true;
-   }
 
 
   /**
