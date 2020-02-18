@@ -1,4 +1,4 @@
-import java.io.Console;
+
 
 
 public class MainProgLoopDemo{
@@ -7,7 +7,7 @@ public class MainProgLoopDemo{
       System.out.println( "\n   Welcome to the MainProgLoopDemo!!\n" );
       System.out.println( "     Press the 'q' key to quit the program." );
       
-      Console console = System.console();
+      var console = System.console();
 
       while( true ) {
         // System.out.print( ">>" );
@@ -23,7 +23,7 @@ public class MainProgLoopDemo{
             switch (command) {
                case "hello": System.out.println("Hi buddy!"); break;
                case "hi": System.out.println("whats up"); break;
-               case "q": System.exit(0);
+               case "q": System.exit(0);break;
                default: System.out.println("hola!");
             }
 

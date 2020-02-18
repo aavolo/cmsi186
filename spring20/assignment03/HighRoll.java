@@ -3,6 +3,10 @@ public class HighRoll {
 
 
 	public static void main (String[] args) {
+		//message to the user
+		//welcome
+		// explaining the program
+		// objective
 
 		int count = 0;
 		int sides = 0;
@@ -23,7 +27,7 @@ public class HighRoll {
 
 		while(true) {
 
-			//message to the user, explaining the program
+
 			// print the menu
 			//wait for input
 			// execute based on user input
