@@ -1,4 +1,4 @@
-
+import java.io.Console;
 
 
 public class MainProgLoopDemo{
@@ -7,13 +7,13 @@ public class MainProgLoopDemo{
       System.out.println( "\n   Welcome to the MainProgLoopDemo!!\n" );
       System.out.println( "     Press the 'q' key to quit the program." );
       
-      var console = System.console();
+      Console console = System.console();
 
       while( true ) {
-         System.out.print( ">>" );
+        // System.out.print( ">>" );
 
          try {
-            String command = readLine("Enter some text! ").trim();
+            String command = console.readLine("Enter some text! ").trim();
             System.out.println( "   You typed " + command );
          
             /*if( 'q' == command.charAt(0) ) {
