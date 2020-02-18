@@ -46,7 +46,16 @@ public class DiceSet {
    * @note   parameters are checked for validity; invalid values throw "IllegalArgumentException"
    */
    public DiceSet( int count, int sides ) {
-      ds = new Die[ count ];
+      if ( count == 0 ) {
+        throw new IllegalArgumentException("Can't have a DiceSet of length 0.")
+      }
+      this.count = count;
+      this.sides = sides;
+      this.ds = new Die[ count ];
+      for ( int i = 0; i < count; i++ ) {
+        this.ds[i] = new Die(sides);
+        this.ds[i].roll();
+      }
    }
 
   /**
