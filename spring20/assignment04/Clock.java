@@ -24,16 +24,16 @@ public class Clock {
    *  Class field definitions go here
    */
 
-   private static final double DEFAULT_TIME_SLICE_IN_SECONDS = 60.0;
-   private static final double MAXIMUM_DEGREE_VALUE = 360.0;
-   private static final double MAXIMUM_TIMESLICE_VALUE = 1800.0;
+   private static final double DEFAULT_TIME_SLICE_IN_SECONDS = 1.0;
+   //private static final double MAXIMUM_DEGREE_VALUE = 360.0;
+   private static final double MAXIMUM_TIMESLICE_VALUE = 43200.0;
 
 
   // private fields
    private double[] timeJunque = new double[3];       // [0] = seconds, [1] = minutes, [2] = hours
    private double totalSeconds = 0.0;
-   private double hourHandDegrees = 0.0;
-   private double minuteHandDegrees = 0.0; 
+  // private double hourHandDegrees = 0.0;
+   //private double minuteHandDegrees = 0.0; 
 
   /**
    *  Constructor
@@ -50,7 +50,11 @@ public class Clock {
    */
    public double[] tick(  double timeSlice ) {
       // Increase total second by timeSlice
+      totalSeconds += timeSlice;
       // Update each value in timeJunque
+      timeJunque[0] = totalSeconds % 60;
+      //update for min
+      //update for hrs
 
       // Optional to have this method return a double for total seconds instead of
       // the time in an array
@@ -68,9 +72,17 @@ public class Clock {
       double returnValue = 0;
 
       // try to parse the arg to a double
+      try {
+         returnValue = Double.parseDouble( argValue );
+      } catch ( NumberFormatException nfe ) {
+         throw new NumberFormatException("timeslice value is not a number");
+      }
       // catch the correct exception
       // throw number format exception if the time slice value is not a number
       // throw illegal argument exception if the time slice value is out of range
+
+      //if returnvalue <=0.0
+      //if returnValue > max time slice value
 
       return returnValue;
    }

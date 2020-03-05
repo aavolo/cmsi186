@@ -22,19 +22,19 @@ import java.text.DecimalFormat;
 public class Ball {
 
    // Private class wide data
-       // radius in inches as given by the problem
-       // one percent slowdown per second due to friction
-       // index of X values within location and speed arrays
-       // index of Y values within location and speed arrays
+       private static final double BALL_RADIUS = 4.45; // radius in inches as given by the problem
+       private static final double FRICTION_COEFFICIENT = .99; // one percent slowdown per second due to friction
+       private static final int X_INDEX = 0; // index of X values within location and speed arrays
+       private static final int Y_INDEX = 1; // index of Y values within location and speed arrays
 
    // Private instance data
-       // all balls will start in bounds by default
-       // all balls will start moving by default
-       private double[] ballLocation;// array containing both coordinate values
-       private double[] ballSpeed;// array containing both direction speed values
+       private boolean outOfBounds = false; // all balls will start in bounds by default
+       private boolean atRest = false; // all balls will start moving by default
+       private double[] ballLocation = new double[2];// array containing both coordinate values
+       private double[] ballSpeed = new double[2];// array containing both direction speed values
 
   /**
-   * Constructor to make a new Ball, no parameters
+   * Constructor to make a new Ball
    *  @param xLoc double-precision value of the X location of the ball
    *  @param yLoc double-precision value of the Y location of the ball
    *  @param xSpeed double-precision value for the initial speed of the ball in X direction
@@ -42,6 +42,11 @@ public class Ball {
    */
    public Ball( double xLoc, double yLoc, double xSpeed, double ySpeed ) {
       // To create an instance of a ball, set the private instance data equal to argument values
+      ballLocation[X_INDEX] = xLoc;
+      ballLocation[Y_INDEX] = yLoc;
+      ballSpeed[X_INDEX] = xSpeed;
+      ballSpeed[Y_INDEX] = ySpeed;
+
    }
 
   /**
@@ -50,6 +55,13 @@ public class Ball {
    */
    public double[] getSpeed() {
       return ballSpeed;
+   }
+
+   public double getSpeed( String xy ) {
+      if ( xy.equals("x") || xy.equals("X ")) {
+        return ballSpeed[X_INDEX];
+      }
+
    }
 
   /**
