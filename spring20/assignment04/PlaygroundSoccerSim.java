@@ -51,8 +51,7 @@ public class PlaygroundSoccerSim {
    *  Method to validate the input arguments
    *  @param arguments String array of the arguments supplied to the program
    */
-   public void validateArgsAndSetupSim( String arguments[] ) throws NumberFormatException,
-                                                                    IllegalArgumentException {
+   public void validateArgsAndSetupSim( String arguments[] )  {
 
     // if no arguments specified OR if number of arguments is NOT a factor of 4 
     // OR if number of arguments is NOT a factor of 4 plus 1
