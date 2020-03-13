@@ -52,9 +52,9 @@ public class Clock {
       // Increase total second by timeSlice
       totalSeconds += timeSlice;
       // Update each value in timeJunque
-      timeJunque[0] = totalSeconds % 60;
-      //min
-      //hrs
+      timeJunque[0]  = totalSeconds % 60;
+      timeJunque[1]  = (int)(totalSeconds / 60) % 60;
+      timeJunque[2]  = (int)totalSeconds / 3600;
 
 
 
