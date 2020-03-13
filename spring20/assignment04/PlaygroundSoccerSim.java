@@ -22,16 +22,23 @@ public class PlaygroundSoccerSim {
 
   // private data for 
   //    - default playground height and width
+  private static double DEFAULT_PLAYGROUND_HEIGHT = 1000;
   //    - default time slice
+  private STATIC double DEFAULT_TIME_SLICE = 1.0;
 
 
   // private instance data for
   //    - are any balls still moving (still a chance of a collision)
   //    - time slice
+  private double timeSlice = DEFAULT_TIME_SLICE;
   //    - playground size
+  private double playGroundHeight = DEFAULT_PLAYGROUND_HEIGHT;
   //    - number of balls
+  private int ballCount = 0;
   //    - array of soccer balls
+  private Ball[] soccerBalls = null;
   //    - clock
+  private Clock c = new Clock();
   private int[] ballsCollided;
 
   // You can put a private static final String here that includes the intro message
@@ -40,10 +47,6 @@ public class PlaygroundSoccerSim {
 
 
    public PlaygroundSoccerSim() {
-
-    // update private instance data
-    //  - playground size
-    //  - create a clock
   
    }
 
@@ -56,6 +59,25 @@ public class PlaygroundSoccerSim {
     // if no arguments specified OR if number of arguments is NOT a factor of 4 
     // OR if number of arguments is NOT a factor of 4 plus 1
     // then dispay message about how to run this program, how it works
+
+    if (arguments.length == 0 || arguments.length % 4 == 2 || 
+        arguments.length % 4 == 3 || arguments.length == 1) {
+      throw new IllegalArgumentExceptions("");
+      //end the program
+    }
+
+    if ( arguments.length % 4 == 1) {
+        try {
+          timeSlice = validateTimeSliceArg(arguments[arguments.length -1]);
+          
+        } catch (NumberFormatException nfe) {
+          //what to do
+        } catch (IllegalArgumentException iae) {
+          //what do to
+        }
+    }
+
+
      
 
     // else if argument count % 4 is 1, assume last is timeslice in seconds
@@ -66,12 +88,31 @@ public class PlaygroundSoccerSim {
 
     // now handle and validate the ball arguments
     //    - ballCount
+
+    ballCount = (int)Math.floor(arguments.length / 4);
   
     // populate soccerBall array, similar to DiceSet
+
+    soccerBalls = new Ball[ballCount];
+
+    for ( int i = 0; i < soccerBalls.length; i++ ){
+        try {
+          soccerBalls[i] = new Ball(Double.parseDouble(arguments[i * 4]),
+                                    Double.parseDouble(arguments[i * 4 + 1]),
+                                    DOuble.parseDouble(arguments[i * 4 + 2]),
+                                    DOuble.parseDouble(arguments[i * 4 + 3]));
+
+        } catch ( NumberFormatException nfe ){
+          //what to do
+        }
+
+
+
+    }
     // converting args to doubles should be in a try / catch
 
          
-
+    // java PlaygroungSS 4 4 1 1 5 5 2 2 6 6 3 3
     
    }
 

@@ -61,6 +61,8 @@ public class Ball {
       if ( xy.equals("x") || xy.equals("X ")) {
         return ballSpeed[X_INDEX];
       }
+      // else if... equals y
+      // else... throw exception
 
    }
 
@@ -92,7 +94,7 @@ public class Ball {
       //Check to see if ball is out of bounds given a playground size
 
       // Set out of bounds private instance data
-      // Call isStillMoving method
+     
 
       // Decrease Speed to 0
       return false;
@@ -130,11 +132,11 @@ public class Ball {
       // Use to format speed
       DecimalFormat dfs = new DecimalFormat( "#0.0000" );
 
-      // Print ball name (maybe use the index), location and speed
+      //  location and speed
       // OR
-      // Print ball name and Out of bounds
+      //  Out of bounds
       // OR
-      // Print ball name and at rest
+      // at rest
       
       return "ball as a string";
    }

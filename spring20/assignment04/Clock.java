@@ -26,13 +26,13 @@ public class Clock {
 
    private static final double DEFAULT_TIME_SLICE_IN_SECONDS = 1.0;
    //private static final double MAXIMUM_DEGREE_VALUE = 360.0;
-   private static final double MAXIMUM_TIMESLICE_VALUE = 43200.0;
+   private static final double MAXIMUM_TIMESLICE_VALUE = 43500;
 
 
   // private fields
    private double[] timeJunque = new double[3];       // [0] = seconds, [1] = minutes, [2] = hours
    private double totalSeconds = 0.0;
-  // private double hourHandDegrees = 0.0;
+   //private double hourHandDegrees = 0.0;
    //private double minuteHandDegrees = 0.0; 
 
   /**
@@ -53,11 +53,13 @@ public class Clock {
       totalSeconds += timeSlice;
       // Update each value in timeJunque
       timeJunque[0] = totalSeconds % 60;
-      //update for min
-      //update for hrs
+      //min
+      //hrs
+
+
 
       // Optional to have this method return a double for total seconds instead of
-      // the time in an array
+      // the time in an
 
       return timeJunque;
    }
@@ -71,18 +73,19 @@ public class Clock {
    public double validateTimeSliceArg( String argValue ) {
       double returnValue = 0;
 
-      // try to parse the arg to a double
       try {
          returnValue = Double.parseDouble( argValue );
-      } catch ( NumberFormatException nfe ) {
-         throw new NumberFormatException("timeslice value is not a number");
+      } catch (NumberFormatException nfe) {
+         throw new NumberFormatException("the time slice is not a number");
       }
+      // try to parse the arg to a double
       // catch the correct exception
       // throw number format exception if the time slice value is not a number
       // throw illegal argument exception if the time slice value is out of range
 
-      //if returnvalue <=0.0
-      //if returnValue > max time slice value
+      if ( returnValue <= 0 ) {
+         throw new IllegalArgumentException (" Cannot have negative or 0 time slice.");
+      }
 
       return returnValue;
    }
